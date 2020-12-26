@@ -1,0 +1,34 @@
+@keyframes slide-left{
+    from{
+        margin-left: 50%;
+        width: 0%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+@keyframes rotate{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes filling-heart{
+    from{
+        font-size: 0rem;
+    }
+    to{
+        font-size: 1.7rem;
+    }
+}

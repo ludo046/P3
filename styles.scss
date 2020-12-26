@@ -1,0 +1,127 @@
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./layouts/layouts";
+@import "./page/page";
+@import "./components/buttons";
+@import "./components/icons";
+@import "./components/animation";
+//general
+a{
+  text-decoration: none;
+  color: black;
+}
+//body
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+//header
+h1{
+    @include logo;
+}
+header{
+  @include ombre;
+  position: relative;
+    .fa-arrow-left{
+  font-size: 1.2rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+}
+
+footer{
+  background-color: $footer;
+  .logo-footer{
+    @include logo-footer;
+  }
+  ul{
+    font-family: roboto, serif, sans-serif;
+    font-size: 1rem;
+    list-style: none;
+    color: $background-top;
+    padding: 0 0 0 1rem;
+    li{
+      padding: 0.2rem 0;
+    }
+    .weight{
+      font-weight: 300;
+    }
+  }
+}
+//menu
+
+.photo{
+  width: 100%;
+  position: relative;
+}
+.background{
+  position:absolute;
+  top: 16.5rem;
+  width: 100%;
+  background-color: $background-top;
+  border-radius: 40px 40px 0 0;
+    .name{
+    justify-content: start;
+    margin: 1.5rem 0 0 1rem;
+    font-weight: 500;
+  }
+}
+.dish{
+  font-family: roboto,serif,sans-serif;
+  margin-bottom: 2rem;
+  position: relative;
+  .underline{
+    border-bottom:3px solid $tertiary-color;
+  }
+  h2{
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding-left: 1.7rem;
+  }
+  h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0.5rem 0 0 1rem;
+  }
+  p{
+    font-weight: 300;
+    margin: 0.3rem;
+    padding-left: 1rem;
+  }
+
+  .meal{
+    display: flex;
+    background-color: white;
+    margin: 0 auto 1rem ;
+    width: 90%;
+    border-radius: 1rem;
+    @include shadow;
+    justify-content: space-between;
+    animation: fadein 1.5s;
+    }
+}  
+.check-background{
+  background-color: $tertiary-color;
+  position: absolute;
+  left: 18.5rem;
+  padding: 1.9em;
+  border-radius: 0 1rem 1rem 0;
+  opacity: 0;
+      &:hover{
+        background-color: $tertiary-color;
+        position: absolute;
+        right: 1rem;
+        padding: 1.1em;
+        border-radius: 0 1rem 1rem 0;
+        opacity: 1;
+        animation: slide-left .50S;
+        .fa-check-circle{
+          animation: rotate .50s .2s;
+          color: white;
+          font-size: 1.5rem;
+      }  
+      }
+}

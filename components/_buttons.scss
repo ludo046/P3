@@ -1,0 +1,64 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 3rem;
+    width: 13.5rem;
+    background-image: linear-gradient(175deg,$secondary-color,$primary-color);
+    border-radius: 15rem;
+    border: none;
+    box-shadow: 3px 3px 10px rgb(196, 196, 196);
+        .btn-text{
+            font-family: roboto,serif,sans-serif;
+            padding: 0.8rem 0;
+            color: white;
+            font-size: 1rem;
+        }
+}
+.heart-button{
+    display: flex;
+    flex-direction: row;
+    #disable{
+        position: relative;
+        left: 17rem;
+        top: 0.5rem;
+        font-size: 1.5rem;
+    }
+    #enable{
+    @include gradient-text;
+    position: absolute;
+    left: 16.9rem;
+    top: 1.3rem;
+    font-size: 1.7rem;
+    opacity: 0;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+.heart-button-menu{
+    display: flex;
+    flex-direction: row;
+    #disable-menu{
+        position: relative;
+        left: 1rem;
+        top: 2.5rem;
+        font-size: 1.5rem;
+    }
+    #enable-menu{
+    @include gradient-text;
+    position: absolute;
+    left: 20.1rem;
+    top: 2.4rem;
+    opacity: 0;
+        &:hover{
+            opacity: 1;
+            animation: filling-heart .5s;
+            animation-fill-mode: forwards;
+            transform-origin: center;
+        }
+    }
+}
+
+
+
