@@ -1,0 +1,130 @@
+//acceuil
+#bar{
+    display: flex;
+    justify-content: center;
+    background-color: $search-bar;
+}
+#recherche{
+    background-color: $search-bar;
+        #bar{
+            padding: 0.8rem;
+        }
+            .search-bar{
+                font-family: roboto, serif, sans-serif;
+                font-size: 1rem;
+                border: none;
+                background-color: transparent;
+            }
+                ::placeholder{
+                    color: black;
+                    padding-left: 1.1rem; 
+                }
+}
+#top{
+   background-color: $background-top;
+   padding: 1.3rem 0 3.5rem 0;
+    #top-text{
+        font-family: roboto,serif,sans-serif;
+            h2{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .fine-text{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                @include fine-text;
+                padding-bottom: 0.7rem;
+            }
+    }
+}
+#fonctionnement{
+    padding: 1.8rem 0;
+    .title-section
+    {
+        @include title-section;
+    }
+}
+.fonctionnement-list{
+    @include fonction-list;
+    width: 15rem;
+    position: relative;
+    .horizon{
+        display: flex;
+        padding-top: 0.5rem;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    &.rose{
+        background-color: rgb(245,237,255);
+    }
+}
+.number{
+    display: flex;
+    background-color: $primary-color;
+    height: 0.5rem;
+    padding: 0.4rem 0.5rem 0.7rem 0.5rem;
+    color: white;
+    border-radius: 20rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    position: absolute;
+    left: -1em;
+    top: 0.9em;
+}
+#restaurants{
+    padding: 1.8rem 0;
+    background-color: $background-top;
+    .title-section
+    {
+        @include title-section;
+    }
+}
+.photo{
+    position: relative;
+    .nouveau{
+        background-color: $nouveau;
+        padding: 0.3rem 0.7rem;
+        font-family: roboto, serif, sans-serif;
+        font-size: 0.9rem;
+        color: $nouveau-text;
+        border-radius: 0.2rem;
+        position: absolute;
+        left: 16rem;
+        top: 1rem;
+    }
+    .photo-resto{
+        width: 20rem;
+        height: 11rem;
+        display: flex;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 1em 1em 0 0;
+    }
+}
+.overlay{
+    width: 20rem;
+    height: 4rem;
+    margin: 0 auto 1rem auto;
+    @include shadow;
+    border-radius: 0 0 1rem 1rem;
+    padding-top: 1rem;
+    position: relative;
+    .nom{
+        font-family: roboto, serif, sans-serif;
+        padding: 0 0 0 1rem;
+        position: absolute;
+        top: 1rem;
+        font-size: 1.2rem;
+    }
+    .ville{
+        font-family: roboto, serif, sans-serif;
+        padding: 0 0 0 1rem;
+        position: absolute;
+        top: 3rem;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+}
