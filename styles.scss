@@ -10,7 +10,7 @@ a{
   text-decoration: none;
   color: black;
 }
-header,main,footer{
+.index{
   position: relative;
   animation: fadein 4s cubic-bezier(.95,.01,1,-0.02) 0s 1;
 }
@@ -93,26 +93,31 @@ footer{
     padding-left: 1.7rem;
   }
   h3{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin: 0;
-    padding: 0.5rem 0 0 1rem;
+    padding: 0.8rem 0 0 1rem;
   }
   p{
     font-weight: 300;
-    margin: 0.3rem;
+    margin: 0.3rem 0 1rem 0 ;
     padding-left: 1rem;
+    font-size: 0.9rem;
   }
 
   .meal{
     display: flex;
     background-color: white;
     margin: 0 auto 1rem ;
-    width: 90%;
+    width: 95%;
     border-radius: 1rem;
     @include shadow;
-    justify-content: space-between;
     animation: fadein 1.5s;
+    justify-content: space-between;
+    }
+    .price{
+      font-size: 1rem;
+      margin: 1.5rem 1.5rem 1rem 0;
     }
 }  
 .check-background{
@@ -125,8 +130,8 @@ footer{
       &:hover{
         background-color: $tertiary-color;
         position: absolute;
-        right: 1rem;
-        padding: 1.1em;
+        right: 0.5rem;
+        padding: 1.5em 2rem 1.5rem 1.5rem;
         border-radius: 0 1rem 1rem 0;
         opacity: 1;
         animation: slide-left .50S;
