@@ -10,7 +10,7 @@
     box-shadow: 3px 3px 10px rgb(196, 196, 196);
         &:hover{
             filter: brightness(1.25);
-            border: none;
+            outline: 0;
         }
         .btn-text{
             font-family: roboto,serif,sans-serif;
@@ -27,6 +27,10 @@
         left: 17rem;
         top: 0.5rem;
         font-size: 1.5rem;
+        @media screen and (min-width: 1224px){
+            left: 7.5rem;
+            top: 8rem;
+        }
     }
     #enable{
     @include gradient-text;
@@ -38,7 +42,15 @@
         &:hover{
             opacity: 1;
             animation: filling-heart .5s;
+        }    
+        @media screen and (min-width: 1224px){
+        left: 7.4rem;
+        top: 8.9rem;
+        &:hover{
+            opacity: 1;
+            animation: filling-heart 0.5 linear 0s 1 backwards;
         }
+    }
     }
 }
 .heart-button-menu{

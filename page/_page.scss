@@ -45,6 +45,18 @@
     .title-section
     {
         @include title-section;
+        @media screen and (min-width: 1224px){
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    }
+
+}
+.fonction{
+    @media screen and (min-width: 1224px){
+        display: flex;
     }
 }
 .fonctionnement-list{
@@ -59,6 +71,10 @@
     }
     &.rose{
         background-color: rgb(245,237,255);
+    }
+    @media screen and (min-width: 1224px){        
+        display: flex;
+        margin: 1rem auto;
     }
 }
 .number{
@@ -77,16 +93,32 @@
 #restaurants{
     padding: 1.8rem 0;
     background-color: $background-top;
+    @media screen and (min-width: 1224px){
+        display: flex;
+        flex-direction: column;
+    }
     .title-section
     {
         @include title-section;
+        @media screen and (min-width: 1224px){
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    }
+    .cards{
+        @media screen and (min-width: 1224px){
+            display: flex;
+            margin: auto;
+        }
     }
 }
 .photo{
     position: relative;
     .nouveau{
         background-color: $nouveau;
-        padding: 0.3rem 0.7rem;
+        height: 1.5rem;
+        width: 4.5rem;
         font-family: roboto, serif, sans-serif;
         font-size: 0.9rem;
         color: $nouveau-text;
@@ -94,6 +126,15 @@
         position: absolute;
         left: 16rem;
         top: 1rem;
+        @media screen and (min-width: 1224px){
+            top: 9rem;
+            left: 12rem;
+        }
+        .nouveau-text{
+            position: absolute;
+            top: -0.7rem;
+            left: 0.5rem;
+        }
     }
     .photo-resto{
         width: 20rem;
@@ -102,6 +143,12 @@
         margin: 0 auto;
         object-fit: cover;
         border-radius: 1em 1em 0 0;
+        @media screen and (min-width: 1224px){
+            width: 10rem;
+            border-radius: 1rem 0 0 1rem ;
+            margin: 0 0 0 1.5rem;
+        }
+        
     }
 }
 .overlay{
@@ -112,6 +159,11 @@
     border-radius: 0 0 1rem 1rem;
     padding-top: 1rem;
     position: relative;
+    @media screen and (min-width: 1224px){
+        width: 10rem;
+        height: 10rem;
+        border-radius: 0 1rem 1rem 0 ;
+    }
     .nom{
         font-family: roboto, serif, sans-serif;
         padding: 0 0 0 1rem;
@@ -126,5 +178,68 @@
         top: 3rem;
         font-weight: 300;
         font-size: 1.1rem;
+        @media screen and (min-width: 1224px){
+            top: 5rem;
+        }
     }
 }
+//loader
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; 
+            background-color: $primary-color;
+        }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; 
+            background-color: $primary-color;
+        }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; 
+            background-color: $primary-color;
+        }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+            background-color: $primary-color;
+        }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+            background-color: $secondary-color;
+        }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; 
+            background-color: $primary-color;
+        }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; 
+            background-color: $primary-color;
+        }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; 
+            background-color: $primary-color;
+        }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; 
+            background-color: $primary-color;
+        }

@@ -53,6 +53,19 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+@media screen and (min-width: 1224px) {
+  #fonctionnement .title-section {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .fonction {
+    display: flex;
+  }
+}
 
 .fonctionnement-list {
   display: flex;
@@ -75,6 +88,12 @@
 .fonctionnement-list.rose {
   background-color: #f5edff;
 }
+@media screen and (min-width: 1224px) {
+  .fonctionnement-list {
+    display: flex;
+    margin: 1rem auto;
+  }
+}
 
 .number {
   display: flex;
@@ -94,11 +113,30 @@
   padding: 1.8rem 0;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 1224px) {
+  #restaurants {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #restaurants .title-section {
   padding: 3em 1.3rem;
   font-family: roboto, serif, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
+}
+@media screen and (min-width: 1224px) {
+  #restaurants .title-section {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1224px) {
+  #restaurants .cards {
+    display: flex;
+    margin: auto;
+  }
 }
 
 .photo {
@@ -106,7 +144,8 @@
 }
 .photo .nouveau {
   background-color: #99e2d0;
-  padding: 0.3rem 0.7rem;
+  height: 1.5rem;
+  width: 4.5rem;
   font-family: roboto, serif, sans-serif;
   font-size: 0.9rem;
   color: #008766;
@@ -115,6 +154,17 @@
   left: 16rem;
   top: 1rem;
 }
+@media screen and (min-width: 1224px) {
+  .photo .nouveau {
+    top: 9rem;
+    left: 12rem;
+  }
+}
+.photo .nouveau .nouveau-text {
+  position: absolute;
+  top: -0.7rem;
+  left: 0.5rem;
+}
 .photo .photo-resto {
   width: 20rem;
   height: 11rem;
@@ -122,6 +172,13 @@
   margin: 0 auto;
   object-fit: cover;
   border-radius: 1em 1em 0 0;
+}
+@media screen and (min-width: 1224px) {
+  .photo .photo-resto {
+    width: 10rem;
+    border-radius: 1rem 0 0 1rem;
+    margin: 0 0 0 1.5rem;
+  }
 }
 
 .overlay {
@@ -132,6 +189,13 @@
   border-radius: 0 0 1rem 1rem;
   padding-top: 1rem;
   position: relative;
+}
+@media screen and (min-width: 1224px) {
+  .overlay {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0 1rem 1rem 0;
+  }
 }
 .overlay .nom {
   font-family: roboto, serif, sans-serif;
@@ -148,6 +212,79 @@
   font-weight: 300;
   font-size: 1.1rem;
 }
+@media screen and (min-width: 1224px) {
+  .overlay .ville {
+    top: 5rem;
+  }
+}
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  background-color: #9356DC;
+}
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  background-color: #9356DC;
+}
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  background-color: #9356DC;
+}
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  background-color: #9356DC;
+}
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  background-color: #FF79DA;
+}
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  background-color: #9356DC;
+}
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  background-color: #9356DC;
+}
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  background-color: #9356DC;
+}
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  background-color: #9356DC;
+}
 
 .btn {
   display: flex;
@@ -162,7 +299,7 @@
 }
 .btn:hover {
   filter: brightness(1.25);
-  border: none;
+  outline: 0;
 }
 .btn .btn-text {
   font-family: roboto, serif, sans-serif;
@@ -181,6 +318,12 @@
   top: 0.5rem;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 1224px) {
+  .heart-button #disable {
+    left: 7.5rem;
+    top: 8rem;
+  }
+}
 .heart-button #enable {
   color: #FF79DA;
   background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
@@ -196,6 +339,16 @@
 .heart-button #enable:hover {
   opacity: 1;
   animation: filling-heart 0.5s;
+}
+@media screen and (min-width: 1224px) {
+  .heart-button #enable {
+    left: 7.4rem;
+    top: 8.9rem;
+  }
+  .heart-button #enable:hover {
+    opacity: 1;
+    animation: filling-heart 0.5 linear 0s 1 backwards;
+  }
 }
 
 .heart-button-menu {
@@ -282,74 +435,6 @@
     font-size: 1.7rem;
   }
 }
-.sk-cube-grid {
-  width: 40px;
-  height: 40px;
-  margin: 100px auto;
-}
-
-.sk-cube-grid .sk-cube {
-  width: 33%;
-  height: 33%;
-  float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-}
-
-.sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  background-color: #9356DC;
-}
-
-.sk-cube-grid .sk-cube2 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  background-color: #9356DC;
-}
-
-.sk-cube-grid .sk-cube3 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-  background-color: #9356DC;
-}
-
-.sk-cube-grid .sk-cube4 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-  background-color: #9356DC;
-}
-
-.sk-cube-grid .sk-cube5 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  background-color: #FF79DA;
-}
-
-.sk-cube-grid .sk-cube6 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  background-color: #9356DC;
-}
-
-.sk-cube-grid .sk-cube7 {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  background-color: #9356DC;
-}
-
-.sk-cube-grid .sk-cube8 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-  background-color: #9356DC;
-}
-
-.sk-cube-grid .sk-cube9 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  background-color: #9356DC;
-}
-
 @-webkit-keyframes sk-cubeGridScaleDelay {
   0%, 70%, 100% {
     -webkit-transform: scale3D(1, 1, 1);
@@ -484,12 +569,16 @@ footer ul .weight {
   font-weight: 400;
   margin: 0;
   padding: 0.8rem 0 0 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .dish p {
   font-weight: 300;
   margin: 0.3rem 0 1rem 0;
   padding-left: 1rem;
   font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .dish .meal {
   display: flex;
@@ -504,6 +593,7 @@ footer ul .weight {
 .dish .price {
   font-size: 1rem;
   margin: 1.5rem 1.5rem 1rem 0;
+  overflow: hidden;
 }
 
 .check-background {
@@ -524,6 +614,29 @@ footer ul .weight {
   animation: slide-left 0.5S;
 }
 .check-background:hover .fa-check-circle {
+  animation: rotate 0.5s 0.2s;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.check-background-l {
+  background-color: #99E2D0;
+  position: absolute;
+  left: 18.5rem;
+  padding: 1.9em;
+  border-radius: 0 1rem 1rem 0;
+  opacity: 0;
+}
+.check-background-l:hover {
+  background-color: #99E2D0;
+  position: absolute;
+  right: 0.5rem;
+  padding: 2em 2rem 2.1rem 1.5rem;
+  border-radius: 0 1rem 1rem 0;
+  opacity: 1;
+  animation: slide-left 0.5S;
+}
+.check-background-l:hover .fa-check-circle {
   animation: rotate 0.5s 0.2s;
   color: white;
   font-size: 1.5rem;
