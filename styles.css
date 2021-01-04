@@ -1,4 +1,4 @@
-#bar {
+main #bar {
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
@@ -343,7 +343,7 @@
 }
 .heart-button #enable:hover {
   opacity: 1;
-  animation: filling-heart 0.5s;
+  animation: fadein 0.5s;
 }
 @media screen and (min-width: 1224px) {
   .heart-button #enable {
@@ -352,7 +352,7 @@
   }
   .heart-button #enable:hover {
     opacity: 1;
-    animation: filling-heart 0.5 linear 0s 1 backwards;
+    animation: fadein 0.5 linear 0s 1 backwards;
   }
 }
 
@@ -374,12 +374,84 @@
   display: inline-block;
   position: absolute;
   left: 20.1rem;
-  top: 2.4rem;
+  top: 2.5rem;
   opacity: 0;
+  font-size: 1.6rem;
 }
 .heart-button-menu #enable-menu:hover {
   opacity: 1;
-  animation: filling-heart 0.5s;
+  animation: fadein 0.5s;
+}
+
+.heart-button-menu {
+  display: flex;
+  flex-direction: row;
+}
+.heart-button-menu #disable-menu-note {
+  position: relative;
+  left: 1rem;
+  top: 2.5rem;
+  font-size: 1.5rem;
+}
+.heart-button-menu #enable-menu-note {
+  color: #FF79DA;
+  background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  position: absolute;
+  left: 20.5rem;
+  top: 2.5rem;
+  font-size: 1.6rem;
+  opacity: 0;
+}
+.heart-button-menu #enable-menu-note:hover {
+  opacity: 1;
+  animation: fadein 0.5s;
+}
+.heart-button-menu #disable-menu-france {
+  position: relative;
+  left: 5rem;
+  top: 2.5rem;
+  font-size: 1.5rem;
+}
+.heart-button-menu #enable-menu-france {
+  color: #FF79DA;
+  background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  position: absolute;
+  left: 20.3rem;
+  top: 2.5rem;
+  font-size: 1.6rem;
+  opacity: 0;
+}
+.heart-button-menu #enable-menu-france:hover {
+  opacity: 1;
+  animation: fadein 0.5s;
+}
+.heart-button-menu #disable-menu-sens {
+  position: relative;
+  left: 2rem;
+  top: 2.5rem;
+  font-size: 1.5rem;
+}
+.heart-button-menu #enable-menu-sens {
+  color: #FF79DA;
+  background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  position: absolute;
+  left: 20.5rem;
+  top: 2.5rem;
+  font-size: 1.6rem;
+  opacity: 0;
+}
+.heart-button-menu #enable-menu-sens:hover {
+  opacity: 1;
+  animation: fadein 0.5s;
 }
 
 .fa-map-marker-alt {
@@ -416,6 +488,16 @@
     width: 7%;
   }
 }
+@keyframes slide-left-desk {
+  from {
+    margin-left: 50%;
+    width: 0%;
+  }
+  to {
+    margin-left: 50%;
+    width: 2%;
+  }
+}
 @keyframes rotate {
   from {
     transform: rotate(360deg);
@@ -430,14 +512,6 @@
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes filling-heart {
-  from {
-    font-size: 0rem;
-  }
-  to {
-    font-size: 1.7rem;
   }
 }
 @-webkit-keyframes sk-cubeGridScaleDelay {
@@ -468,6 +542,22 @@
     filter: brightness(1.25);
   }
 }
+@keyframes dish {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes price-translate {
+  from {
+    padding-right: 0;
+  }
+  to {
+    padding-right: 6rem;
+  }
+}
 a {
   text-decoration: none;
   color: black;
@@ -490,6 +580,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 h1 {
@@ -510,6 +601,20 @@ header .fa-arrow-left {
   position: absolute;
   left: 1.5rem;
   top: 1.5rem;
+}
+
+.footer {
+  background-color: #363636;
+  position: absolute;
+  width: 100%;
+  top: 90rem;
+}
+
+.footer-note {
+  background-color: #363636;
+  position: absolute;
+  width: 100%;
+  top: 95rem;
 }
 
 footer {
@@ -534,6 +639,12 @@ footer ul {
 footer ul li {
   padding: 0.2rem 0;
 }
+footer ul li .fa-hands-helping {
+  margin-right: 0.5rem;
+}
+footer ul li .fa-utensils {
+  margin-right: 0.9rem;
+}
 footer ul .weight {
   font-weight: 300;
 }
@@ -541,6 +652,8 @@ footer ul .weight {
 .photo {
   width: 100%;
   position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 
 .background {
@@ -549,6 +662,7 @@ footer ul .weight {
   width: 100%;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
+  padding-bottom: 5rem;
 }
 .background .name {
   justify-content: start;
@@ -574,8 +688,9 @@ footer ul .weight {
   font-weight: 400;
   margin: 0;
   padding: 0.8rem 0 0 1rem;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
 }
 .dish p {
   font-weight: 300;
@@ -583,6 +698,7 @@ footer ul .weight {
   padding-left: 1rem;
   font-size: 0.9rem;
   white-space: nowrap;
+  overflow-x: hidden;
   text-overflow: ellipsis;
 }
 .dish .meal {
@@ -598,16 +714,18 @@ footer ul .weight {
 .dish .price {
   font-size: 1rem;
   margin: 1.5rem 1.5rem 1rem 0;
+  white-space: nowrap;
   overflow: hidden;
-  float: right;
+  text-overflow: ellipsis;
 }
 
 .check-background {
-  background-color: transparent;
+  background-color: red;
   position: absolute;
   padding: 1.5rem 19.8rem 1.8rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
   opacity: 0;
+  display: flex;
 }
 @media screen and (min-width: 1224px) {
   .check-background {
@@ -621,11 +739,12 @@ footer ul .weight {
   padding: 1.5em 2rem 1.5rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
   opacity: 1;
-  animation: slide-left 0.2s linear 0s 1 backwards;
+  animation: slide-left 0.4s;
 }
 @media screen and (min-width: 1224px) {
   .check-background:active {
     right: 2rem;
+    animation: slide-left-desk 0.4s;
   }
 }
 .check-background:active .fa-check-circle {
@@ -635,23 +754,32 @@ footer ul .weight {
 }
 
 .check-background-l {
-  background-color: #99E2D0;
+  background-color: transparent;
   position: absolute;
-  left: 18.5rem;
-  padding: 1.9em;
+  padding: 1.5rem 19.8rem 1.8rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
   opacity: 0;
 }
-.check-background-l:hover {
+@media screen and (min-width: 1224px) {
+  .check-background-l {
+    padding: 2.2rem 83rem 2.3rem 1.5rem;
+  }
+}
+.check-background-l:active {
   background-color: #99E2D0;
   position: absolute;
   right: 0.5rem;
   padding: 2em 2rem 2.1rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
   opacity: 1;
-  animation: slide-left 0.5S;
+  animation: slide-left 0.2s linear 0s 1 backwards;
 }
-.check-background-l:hover .fa-check-circle {
+@media screen and (min-width: 1224px) {
+  .check-background-l:active {
+    right: 2rem;
+  }
+}
+.check-background-l:active .fa-check-circle {
   animation: rotate 0.5s 0.2s;
   color: white;
   font-size: 1.5rem;

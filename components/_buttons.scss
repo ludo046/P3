@@ -41,14 +41,14 @@
     opacity: 0;
         &:hover{
             opacity: 1;
-            animation: filling-heart .5s;
+            animation: fadein .5s;
         }    
         @media screen and (min-width: 1224px){
         left: 7.4rem;
         top: 8.9rem;
         &:hover{
             opacity: 1;
-            animation: filling-heart 0.5 linear 0s 1 backwards;
+            animation: fadein 0.5 linear 0s 1 backwards;
         }
     }
     }
@@ -66,14 +66,75 @@
     @include gradient-text;
     position: absolute;
     left: 20.1rem;
-    top: 2.4rem;
+    top: 2.5rem;
     opacity: 0;
+    font-size: 1.6rem;
         &:hover{
             opacity: 1;
-            animation: filling-heart .5s;
+            animation: fadein .5s;
         }
     }
 }
+.heart-button-menu{
+    display: flex;
+    flex-direction: row;
+    #disable-menu-note{
+        position: relative;
+        left: 1rem;
+        top: 2.5rem;
+        font-size: 1.5rem;
+    }
+    #enable-menu-note{
+    @include gradient-text;
+    position: absolute;
+    left: 20.5rem;
+    top: 2.5rem;
+    font-size: 1.6rem;
+    opacity: 0;
+        &:hover{
+            opacity: 1;
+            animation: fadein .5s;
+        }
+    }
+    #disable-menu-france{
+        position: relative;
+        left: 5rem;
+        top: 2.5rem;
+        font-size: 1.5rem;
+    }
+    #enable-menu-france{
+    @include gradient-text;
+    position: absolute;
+    left: 20.3rem;
+    top: 2.5rem;
+    font-size: 1.6rem;
+    opacity: 0;
+        &:hover{
+            opacity: 1;
+            animation: fadein .5s;
+        }
+    }
+    #disable-menu-sens{
+        position: relative;
+        left: 2rem;
+        top: 2.5rem;
+        font-size: 1.5rem;
+    }
+    #enable-menu-sens{
+    @include gradient-text;
+    position: absolute;
+    left: 20.5rem;
+    top: 2.5rem;
+    font-size: 1.6rem;
+    opacity: 0;
+        &:hover{
+            opacity: 1;
+            animation: fadein .5s;
+        }
+    }
+}
+
+
 
 
 

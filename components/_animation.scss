@@ -8,6 +8,16 @@
         width: 7%;
     }
 }
+@keyframes slide-left-desk{
+    from{
+        margin-left: 50%;
+        width: 0%;
+    }
+    to{
+        margin-left: 50%;
+        width: 2%;
+    }
+}
 @keyframes rotate{
     from{
         transform: rotate(360deg);
@@ -22,14 +32,6 @@
     }
     to{
         opacity: 1;
-    }
-}
-@keyframes filling-heart{
-    from{
-        font-size: 0rem;
-    }
-    to{
-        font-size: 1.7rem;
     }
 }
   @-webkit-keyframes sk-cubeGridScaleDelay {
@@ -60,3 +62,19 @@
         filter: brightness(1.25);
       }
   }
+  @keyframes dish{
+      from{
+          width: 100%;
+      }
+      to{
+          width:20%;
+      }
+  }
+@keyframes price-translate{
+    from{
+        padding-right: 0;
+    }
+    to{
+        padding-right: 6rem;
+    }
+}
