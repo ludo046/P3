@@ -10,24 +10,11 @@ a{
   text-decoration: none;
   color: black;
 }
-.index{
-  position: relative;
-  animation: fadein 4s cubic-bezier(.95,.01,1,-0.02) 0s 1;
-}
-.sk-cube-grid{
-  position: absolute;
-  top: 12rem;
-  left: 11rem;
-  display: block;
-  animation: fadein 0.1s linear 3s 1 reverse forwards;
-}
-
 //body
 body{
   width: 100%;
   margin: 0;
   padding: 0;
-  position: relative;
 }
 //header
 h1{
@@ -43,18 +30,7 @@ header{
   top: 1.5rem;
 }
 }
-.footer{
-  background-color: $footer;
-  position: absolute;
-  width: 100%;
-  top: 90rem;
-}
-.footer-note{
-  background-color: $footer;
-  position: absolute;
-  width: 100%;
-  top: 95rem;
-}
+
 footer{
   background-color: $footer;
   .logo-footer{
@@ -68,12 +44,6 @@ footer{
     padding: 0 0 0 1rem;
     li{
       padding: 0.2rem 0;
-        .fa-hands-helping{
-            margin-right: 0.5rem;
-        }
-        .fa-utensils{
-            margin-right: 0.9rem;
-        }
     }
     .weight{
       font-weight: 300;
@@ -85,8 +55,6 @@ footer{
 .photo{
   width: 100%;
   position: relative;
-  object-fit: cover;
-  object-position: center;
 }
 .background{
   position:absolute;
@@ -94,7 +62,6 @@ footer{
   width: 100%;
   background-color: $background-top;
   border-radius: 40px 40px 0 0;
-  padding-bottom: 5rem;
     .name{
     justify-content: start;
     margin: 1.5rem 0 0 1rem;
@@ -114,96 +81,47 @@ footer{
     padding-left: 1.7rem;
   }
   h3{
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 500;
     margin: 0;
-    padding: 0.8rem 0 0 1rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow-x: hidden;
+    padding: 0.5rem 0 0 1rem;
   }
   p{
     font-weight: 300;
-    margin: 0.3rem 0 1rem 0 ;
+    margin: 0.3rem;
     padding-left: 1rem;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
   }
 
   .meal{
     display: flex;
     background-color: white;
     margin: 0 auto 1rem ;
-    width: 95%;
+    width: 90%;
     border-radius: 1rem;
     @include shadow;
-    animation: fadein 1.5s;
     justify-content: space-between;
-    }
-    .price{
-      font-size: 1rem;
-      margin: 1.5rem 1.5rem 1rem 0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    animation: fadein 1.5s;
     }
 }  
 .check-background{
-  background-color: red;
+  background-color: $tertiary-color;
   position: absolute;
-  padding: 1.5rem 19.8rem 1.8rem 1.5rem;
+  left: 18.5rem;
+  padding: 1.9em;
   border-radius: 0 1rem 1rem 0;
   opacity: 0;
-  display: flex;
-  @media screen and (min-width: 1224px){
-    padding: 1.5rem 83rem 1.8rem 1.5rem;
-}
-      &:active{
+      &:hover{
         background-color: $tertiary-color;
         position: absolute;
-        right: 0.5rem;
-        padding: 1.5em 2rem 1.5rem 1.5rem;
+        right: 1rem;
+        padding: 1.1em;
         border-radius: 0 1rem 1rem 0;
         opacity: 1;
-        animation: slide-left 0.4s;
-        @media screen and (min-width: 1224px){
-          right: 2rem;
-          animation: slide-left-desk 0.4s;
-        }
-        .fa-check-circle{
-          animation: rotate .50s;
-          color: white;
-          font-size: 1.5rem;
-      }  
-      }
-}
-.check-background-l{
-  background-color: transparent;
-  position: absolute;
-  padding: 1.5rem 19.8rem 1.8rem 1.5rem;
-  border-radius: 0 1rem 1rem 0;
-  opacity: 0;
-  @media screen and (min-width: 1224px){
-    padding: 2.2rem 83rem 2.3rem 1.5rem;
-}
-      &:active{
-        background-color: $tertiary-color;
-        position: absolute;
-        right: 0.5rem;
-        padding: 2em 2rem 2.1rem 1.5rem;
-        border-radius: 0 1rem 1rem 0;
-        opacity: 1;
-        animation: slide-left .20s linear 0s 1 backwards;
-        @media screen and (min-width: 1224px){
-          right: 2rem;
-        }
+        animation: slide-left .50S;
         .fa-check-circle{
           animation: rotate .50s .2s;
           color: white;
           font-size: 1.5rem;
       }  
       }
-
 }

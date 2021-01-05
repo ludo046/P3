@@ -8,10 +8,6 @@
     border-radius: 15rem;
     border: none;
     box-shadow: 3px 3px 10px rgb(196, 196, 196);
-        &:hover{
-            filter: brightness(1.25);
-            outline: 0;
-        }
         .btn-text{
             font-family: roboto,serif,sans-serif;
             padding: 0.8rem 0;
@@ -27,10 +23,6 @@
         left: 17rem;
         top: 0.5rem;
         font-size: 1.5rem;
-        @media screen and (min-width: 1224px){
-            left: 7.5rem;
-            top: 8rem;
-        }
     }
     #enable{
     @include gradient-text;
@@ -41,16 +33,7 @@
     opacity: 0;
         &:hover{
             opacity: 1;
-            animation: fadein .5s;
-        }    
-        @media screen and (min-width: 1224px){
-        left: 7.4rem;
-        top: 8.9rem;
-        &:hover{
-            opacity: 1;
-            animation: fadein 0.5 linear 0s 1 backwards;
         }
-    }
     }
 }
 .heart-button-menu{
@@ -66,75 +49,16 @@
     @include gradient-text;
     position: absolute;
     left: 20.1rem;
-    top: 2.5rem;
+    top: 2.4rem;
     opacity: 0;
-    font-size: 1.6rem;
         &:hover{
             opacity: 1;
-            animation: fadein .5s;
+            animation: filling-heart .5s;
+            animation-fill-mode: forwards;
+            transform-origin: center;
         }
     }
 }
-.heart-button-menu{
-    display: flex;
-    flex-direction: row;
-    #disable-menu-note{
-        position: relative;
-        left: 1rem;
-        top: 2.5rem;
-        font-size: 1.5rem;
-    }
-    #enable-menu-note{
-    @include gradient-text;
-    position: absolute;
-    left: 20.5rem;
-    top: 2.5rem;
-    font-size: 1.6rem;
-    opacity: 0;
-        &:hover{
-            opacity: 1;
-            animation: fadein .5s;
-        }
-    }
-    #disable-menu-france{
-        position: relative;
-        left: 5rem;
-        top: 2.5rem;
-        font-size: 1.5rem;
-    }
-    #enable-menu-france{
-    @include gradient-text;
-    position: absolute;
-    left: 20.3rem;
-    top: 2.5rem;
-    font-size: 1.6rem;
-    opacity: 0;
-        &:hover{
-            opacity: 1;
-            animation: fadein .5s;
-        }
-    }
-    #disable-menu-sens{
-        position: relative;
-        left: 2rem;
-        top: 2.5rem;
-        font-size: 1.5rem;
-    }
-    #enable-menu-sens{
-    @include gradient-text;
-    position: absolute;
-    left: 20.5rem;
-    top: 2.5rem;
-    font-size: 1.6rem;
-    opacity: 0;
-        &:hover{
-            opacity: 1;
-            animation: fadein .5s;
-        }
-    }
-}
-
-
 
 
 
