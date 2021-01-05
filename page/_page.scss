@@ -50,7 +50,7 @@
         justify-content: center;
         padding: 0;
     }
-        @media screen and (max-width: 1024px) and (min-width: 768px){
+        @media screen and (max-width: 1224px) and (min-width: 768px){
             display: flex;
             justify-content: center;
             padding: 0 0 1rem 0 ;
@@ -84,7 +84,7 @@
         display: flex;
         margin: 1rem auto;
     }
-    @media screen and (max-width: 1024px) and (min-width: 768px){
+    @media screen and (max-width: 1224px) and (min-width: 768px){
         display: flex;
         margin: 1rem auto;
     }
@@ -92,8 +92,8 @@
 .number{
     display: flex;
     background-color: $primary-color;
-    height: 0.5rem;
-    padding: 0.4rem 0.5rem 0.7rem 0.5rem;
+    height: 0.4rem;
+    padding: 0.3rem 0.5rem 0.8rem 0.5rem;
     color: white;
     border-radius: 20rem;
     font-size: 0.8rem;
@@ -117,7 +117,7 @@
         justify-content: center;
         padding: 0;
         }
-        @media screen and (max-width: 1024px) and (min-width: 768px){
+        @media screen and (max-width: 1224px) and (min-width: 768px){
             display: flex;
             justify-content: center;
             padding: 0;
@@ -147,8 +147,8 @@
             top: 9rem;
             left: 12rem;
         }
-        @media screen and (max-width: 1024px) and (min-width: 768px){
-            left: 37rem;
+        @media screen and (max-width: 1224px) and (min-width: 768px){
+            left: 29rem;
         }
         .nouveau-text{
             position: absolute;
