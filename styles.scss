@@ -10,6 +10,18 @@ a{
   text-decoration: none;
   color: black;
 }
+.index{
+  position: relative;
+  animation: fadein 4s cubic-bezier(.95,.01,1,-0.02) 0s 1;
+}
+.sk-cube-grid{
+  position: absolute;
+  top: 12rem;
+  left: 11rem;
+  display: block;
+  animation: fadein 0.1s linear 3s 1 reverse forwards;
+}
+
 //body
 body{
   width: 100%;
@@ -49,9 +61,19 @@ footer{
       font-weight: 300;
     }
   }
+  .fa-utensils{
+    margin-right: 0.9rem;
+  }
+  .fa-hands-helping{
+    margin-right: 0.5rem;
+  }
+}
+.footer-menu{
+  position: absolute;
+  width: 100%;
+  top: 87rem;
 }
 //menu
-
 .photo{
   width: 100%;
   position: relative;
@@ -81,47 +103,47 @@ footer{
     padding-left: 1.7rem;
   }
   h3{
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
     margin: 0;
-    padding: 0.5rem 0 0 1rem;
+    padding: 0.8rem 0 0 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   p{
     font-weight: 300;
-    margin: 0.3rem;
+    margin: 0.3rem 0 1rem 0 ;
     padding-left: 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-
-  .meal{
-    display: flex;
-    background-color: white;
-    margin: 0 auto 1rem ;
-    width: 90%;
-    border-radius: 1rem;
-    @include shadow;
-    justify-content: space-between;
-    animation: fadein 1.5s;
+}
+.meal{
+  @include meal;
+    .description{
+      margin: 0 1rem 0 0;
+      display: flex;
+      flex-direction: column;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 90%;
+      position: relative;
     }
-}  
-.check-background{
-  background-color: $tertiary-color;
-  position: absolute;
-  left: 18.5rem;
-  padding: 1.9em;
-  border-radius: 0 1rem 1rem 0;
-  opacity: 0;
-      &:hover{
-        background-color: $tertiary-color;
-        position: absolute;
-        right: 1rem;
-        padding: 1.1em;
-        border-radius: 0 1rem 1rem 0;
-        opacity: 1;
-        animation: slide-left .50S;
-        .fa-check-circle{
-          animation: rotate .50s .2s;
-          color: white;
-          font-size: 1.5rem;
-      }  
-      }
+    .price{
+      display: flex;
+      @include price;
+      position: relative;
+      right: 0rem;
+      top: 1.5rem;
+    }  
+    .check-background{
+      @include check-background;
+      } 
+    .check-background-l{
+      @include check-background-l
+    }
 }

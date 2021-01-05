@@ -56,3 +56,78 @@
     -webkit-background-clip: text;
     display: inline-block;
 }
+@mixin meal{
+    display: flex;
+    background-color:transparent;
+    margin: 0 auto 1rem ;
+    width: 95%;
+    border-radius: 1rem;
+    @include shadow;
+    animation: fadein 1.5s;
+    justify-content: space-between;
+}
+@mixin price{
+    display: flex;
+    font-size: 1rem;
+    width: 13%;
+    margin-left: 1rem;
+    @media screen and (min-width: 1225px){
+        width: 5%;
+    }
+}
+@mixin check-background{
+        background-color: yellow;
+        left: 18.5rem;
+        padding: 1.5rem 1.8rem 1.8rem 1.5rem;
+        border-radius: 0 1rem 1rem 0;
+        opacity: 0;
+        width: 1rem;
+        display: flex;
+        position: absolute;
+        @media screen and (min-width: 1225px){
+          padding: 1.5rem 83rem 1.8rem 1.5rem;
+      }
+            &:hover{
+              background-color: $tertiary-color;
+              position: relative;
+              left: 0rem;
+              padding: 1.5em 2rem 1.5rem 1.5rem;
+              border-radius: 0 1rem 1rem 0;
+              opacity: 1;
+              animation: slide-left .40s linear 0s 1 backwards;
+              @media screen and (min-width: 1225px){
+                right: 2rem;
+                animation: slide-left-desktop .40s linear 0s 1 backwards;
+              }
+              .fa-check-circle{
+                animation: rotate .50s;
+                color:white;
+                font-size: 1.5rem;
+            }  
+            }
+}
+@mixin check-background-l {
+    background-color: $tertiary-color;
+    left: 18.5rem;
+    padding: 1.5rem 1.8rem 1.8rem 1.5rem;
+    border-radius: 0 1rem 1rem 0;
+    opacity: 0;
+    width: 1rem;
+    display: flex;
+    position: absolute;
+        &:hover{
+          background-color: $tertiary-color;
+          position: relative;
+          left: 0rem;
+          padding: 2em 2rem 2.1rem 1.5rem;
+          border-radius: 0 1rem 1rem 0;
+          opacity: 1;
+          animation: slide-left .50S;
+          .fa-check-circle{
+            animation: rotate .50s .2s;
+            color: white;
+            font-size: 1.5rem;
+        }  
+        }
+}
+

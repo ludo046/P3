@@ -1,12 +1,19 @@
 @keyframes slide-left{
     from{
-        margin-left: 50%;
+
         width: 0%;
     }
     to{
-        margin-left: 0%;
-        width: 100%;
+        width: 10%;
     }
+}
+@keyframes slide-left-desktop{
+  from{
+    width: 0;
+  }
+  to{
+    width: 1.8%;
+  }
 }
 @keyframes rotate{
     from{
@@ -31,4 +38,40 @@
     to{
         font-size: 1.7rem;
     }
+}
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+
+@keyframes ligth{
+      0%{
+        filter: brightness(1);
+      }
+      100%{
+        filter: brightness(1.25);
+      }
+  }
+@keyframes reduce{
+  from{
+    margin-right: 0rem;
+  }
+  to{
+    margin-right: -40rem;
+  }
 }
