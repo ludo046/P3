@@ -75,3 +75,13 @@
     margin-right: -40rem;
   }
 }
+@keyframes grow{
+  from{
+    height: 4rem;
+    width: 15rem;
+  }
+  to{
+    height: 4.5rem;
+    width: 15.5rem;
+  }
+}

@@ -12,6 +12,7 @@
         &:hover{
             filter: brightness(1.25);
             outline: 0;
+            transform: scale(1.1);
         }
         .btn-text{
             font-family: roboto,serif,sans-serif;
@@ -25,11 +26,15 @@
     flex-direction: row;
     #disable{
         position: relative;
-        left: 17rem;
-        top: 0.5rem;
+        left: 271px;
+        top: 7px;
         font-size: 1.5rem;
+        &:hover{
+            opacity: 0;
+
+        }
         @media screen and (min-width: 1224px){
-            left: 7.5rem;
+            left: 120px;
             top: 8rem;
         }
     }
@@ -37,8 +42,8 @@
     @include gradient-text;
     position: absolute;
     left: 16.9rem;
-    top: 1.3rem;
-    font-size: 1.7rem;
+    top: 1.4rem;
+    font-size: 1.6rem;
     opacity: 0;
         &:hover{
             opacity: 1;
@@ -46,7 +51,7 @@
         }    
         @media screen and (min-width: 1224px){
         left: 7.4rem;
-        top: 8.9rem;
+        top: 9rem;
         &:hover{
             opacity: 1;
             animation: fadein 0.5 linear 0s 1 backwards;

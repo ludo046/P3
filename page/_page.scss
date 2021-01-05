@@ -66,7 +66,11 @@
 .fonctionnement-list{
     @include fonction-list;
     width: 15rem;
+    height: 4rem;
     position: relative;
+    &:hover{
+        transform: scale(1.1);
+    }
     .horizon{
         display: flex;
         padding-top: 0.5rem;
