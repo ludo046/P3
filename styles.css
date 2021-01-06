@@ -89,6 +89,7 @@
 }
 .fonctionnement-list:hover {
   transform: scale(1.1);
+  background-color: #f5edff;
 }
 .fonctionnement-list .horizon {
   display: flex;
@@ -96,8 +97,8 @@
   font-weight: 500;
   font-size: 1rem;
 }
-.fonctionnement-list.rose {
-  background-color: #f5edff;
+.fonctionnement-list .fa-mobile-alt:hover, .fonctionnement-list .fa-list-ul:hover, .fonctionnement-list .fa-store:hover {
+  color: #9356DC;
 }
 @media screen and (min-width: 1225px) {
   .fonctionnement-list {
@@ -508,7 +509,7 @@
 }
 
 .fa-store {
-  color: #9356DC;
+  color: #7e7e7e;
   padding: 0 1.5rem;
   font-size: 1rem;
 }
@@ -611,6 +612,10 @@
 a {
   text-decoration: none;
   color: black;
+}
+
+footer a {
+  color: #f6f6f6;
 }
 
 .index {

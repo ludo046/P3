@@ -10,6 +10,9 @@ a{
   text-decoration: none;
   color: black;
 }
+footer a{
+  color: $background-top;
+}
 .index{
   position: relative;
   animation: fadein 4s cubic-bezier(.95,.01,1,-0.02) 0s 1;
