@@ -28,11 +28,13 @@
 #top #top-text {
   font-family: roboto, serif, sans-serif;
 }
-#top #top-text h2 {
+#top #top-text p {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 #top #top-text .fine-text {
   display: flex;
@@ -192,7 +194,7 @@
 }
 .photo .nouveau .nouveau-text {
   position: absolute;
-  top: -0.7rem;
+  top: 0.2rem;
   left: 0.5rem;
 }
 .photo .photo-resto {

@@ -4,6 +4,9 @@
     justify-content: center;
     background-color: $search-bar;
 }
+.slogan{
+
+}
 #recherche{
     background-color: $search-bar;
         #bar{
@@ -25,11 +28,13 @@
    padding: 1.3rem 0 3.5rem 0;
     #top-text{
         font-family: roboto,serif,sans-serif;
-            h2{
+            p{
                 display: flex;
                 justify-content: center;
                 text-align: center;
                 margin-bottom: 0;
+                font-size: 1.6rem;
+                font-weight: 500;
             }
             .fine-text{
                 display: flex;
@@ -155,7 +160,7 @@
         }
         .nouveau-text{
             position: absolute;
-            top: -0.7rem;
+            top: 0.2rem;
             left: 0.5rem;
         }
     }
