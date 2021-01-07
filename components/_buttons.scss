@@ -24,7 +24,7 @@
 .heart-button{
     display: flex;
     flex-direction: row;
-    #disable{
+    .disable{
         position: relative;
         left: 271px;
         top: 7px;
@@ -38,7 +38,7 @@
             top: 8rem;
         }
     }
-    #enable{
+    .enable{
     @include gradient-text;
     position: absolute;
     left: 16.9rem;
@@ -62,13 +62,13 @@
 .heart-button-france{
     display: flex;
     flex-direction: row;
-    #disable-menu{
+    .disable-menu{
         position: relative;
         left: 4.9rem;
         top: 2.5rem;
         font-size: 1.5rem;
     }
-    #enable-menu{
+    .enable-menu{
     @include gradient-text;
     position: absolute;
     left: 20.1rem;
@@ -84,13 +84,13 @@
 .heart-button-note{
     display: flex;
     flex-direction: row;
-    #disable-menu{
+    .disable-menu{
         position: relative;
         left: 1rem;
         top: 2.5rem;
         font-size: 1.5rem;
     }
-    #enable-menu{
+    .enable-menu{
     @include gradient-text;
     position: absolute;
     left: 20.4rem;
@@ -106,13 +106,13 @@
 .heart-button-delice{
     display: flex;
     flex-direction: row;
-    #disable-menu{
+    .disable-menu{
         position: relative;
         left: 1.7rem;
         top: 2.5rem;
         font-size: 1.5rem;
     }
-    #enable-menu{
+    .enable-menu{
     @include gradient-text;
     position: absolute;
     left: 20.1rem;
@@ -128,13 +128,13 @@
 .heart-button-palette{
     display: flex;
     flex-direction: row;
-    #disable-menu{
+    .disable-menu{
         position: relative;
         left: 1.1rem;
         top: 2.5rem;
         font-size: 1.5rem;
     }
-    #enable-menu{
+    .enable-menu{
     @include gradient-text;
     position: absolute;
     left: 20.1rem;

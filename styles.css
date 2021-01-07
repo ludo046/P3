@@ -349,22 +349,22 @@
   display: flex;
   flex-direction: row;
 }
-.heart-button #disable {
+.heart-button .disable {
   position: relative;
   left: 271px;
   top: 7px;
   font-size: 1.5rem;
 }
-.heart-button #disable:hover {
+.heart-button .disable:hover {
   opacity: 0;
 }
 @media screen and (min-width: 1224px) {
-  .heart-button #disable {
+  .heart-button .disable {
     left: 120px;
     top: 8rem;
   }
 }
-.heart-button #enable {
+.heart-button .enable {
   color: #FF79DA;
   background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
@@ -376,16 +376,16 @@
   font-size: 1.6rem;
   opacity: 0;
 }
-.heart-button #enable:hover {
+.heart-button .enable:hover {
   opacity: 1;
   animation: fadein 0.5s;
 }
 @media screen and (min-width: 1224px) {
-  .heart-button #enable {
+  .heart-button .enable {
     left: 7.4rem;
     top: 9rem;
   }
-  .heart-button #enable:hover {
+  .heart-button .enable:hover {
     opacity: 1;
     animation: fadein 0.5 linear 0s 1 backwards;
   }
@@ -395,13 +395,13 @@
   display: flex;
   flex-direction: row;
 }
-.heart-button-france #disable-menu {
+.heart-button-france .disable-menu {
   position: relative;
   left: 4.9rem;
   top: 2.5rem;
   font-size: 1.5rem;
 }
-.heart-button-france #enable-menu {
+.heart-button-france .enable-menu {
   color: #FF79DA;
   background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
@@ -413,7 +413,7 @@
   font-size: 1.7rem;
   opacity: 0;
 }
-.heart-button-france #enable-menu:hover {
+.heart-button-france .enable-menu:hover {
   opacity: 1;
   animation: fadein 0.5s;
 }
@@ -422,13 +422,13 @@
   display: flex;
   flex-direction: row;
 }
-.heart-button-note #disable-menu {
+.heart-button-note .disable-menu {
   position: relative;
   left: 1rem;
   top: 2.5rem;
   font-size: 1.5rem;
 }
-.heart-button-note #enable-menu {
+.heart-button-note .enable-menu {
   color: #FF79DA;
   background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
@@ -440,7 +440,7 @@
   font-size: 1.7rem;
   opacity: 0;
 }
-.heart-button-note #enable-menu:hover {
+.heart-button-note .enable-menu:hover {
   opacity: 1;
   animation: fadein 0.5s;
 }
@@ -449,13 +449,13 @@
   display: flex;
   flex-direction: row;
 }
-.heart-button-delice #disable-menu {
+.heart-button-delice .disable-menu {
   position: relative;
   left: 1.7rem;
   top: 2.5rem;
   font-size: 1.5rem;
 }
-.heart-button-delice #enable-menu {
+.heart-button-delice .enable-menu {
   color: #FF79DA;
   background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
@@ -467,7 +467,7 @@
   font-size: 1.7rem;
   opacity: 0;
 }
-.heart-button-delice #enable-menu:hover {
+.heart-button-delice .enable-menu:hover {
   opacity: 1;
   animation: fadein 0.5s;
 }
@@ -476,13 +476,13 @@
   display: flex;
   flex-direction: row;
 }
-.heart-button-palette #disable-menu {
+.heart-button-palette .disable-menu {
   position: relative;
   left: 1.1rem;
   top: 2.5rem;
   font-size: 1.5rem;
 }
-.heart-button-palette #enable-menu {
+.heart-button-palette .enable-menu {
   color: #FF79DA;
   background: -webkit-linear-gradient(45deg, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
@@ -494,7 +494,7 @@
   font-size: 1.7rem;
   opacity: 0;
 }
-.heart-button-palette #enable-menu:hover {
+.heart-button-palette .enable-menu:hover {
   opacity: 1;
   animation: fadein 0.5s;
 }
@@ -646,6 +646,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-family: shrikhand, serif, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  padding: 0.7rem;
+  margin: 0;
+}
+
 header {
   box-shadow: inset 0px -2px 2px 0px rgba(45, 50, 50, 0.3);
   position: relative;
@@ -695,6 +704,12 @@ footer .fa-hands-helping {
   top: 87rem;
 }
 
+.footer-menu-note {
+  position: absolute;
+  width: 100%;
+  top: 94rem;
+}
+
 .photo {
   width: 100%;
   position: relative;
@@ -721,12 +736,12 @@ footer .fa-hands-helping {
 .dish .underline {
   border-bottom: 3px solid #99E2D0;
 }
-.dish h2 {
+.dish h3 {
   font-size: 1.1rem;
   font-weight: 300;
   padding-left: 1.7rem;
 }
-.dish h3 {
+.dish h4 {
   font-size: 1.1rem;
   font-weight: 400;
   margin: 0;
