@@ -19,7 +19,8 @@ footer a{
 .sk-cube-grid{
   position: absolute;
   top: 12rem;
-  left: 11rem;
+  left: 50%;
+  transform: translate(-50%);
   display: block;
   animation: fadein 0.1s linear 3s 1 reverse forwards;
 }
@@ -29,6 +30,7 @@ body{
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 //header
 h1{
@@ -64,7 +66,7 @@ footer{
     list-style: none;
     color: $background-top;
     padding: 0 0 1rem 1rem;
-    margin: 0;
+    margin: 0 0 20px 10px;
     @media screen and (min-width: 1225px){
       padding: 0 0 1rem 0;
     }
@@ -104,7 +106,7 @@ footer{
 .footer-menu{
   position: absolute;
   width: 100%;
-  top: 87rem;
+  top: 90rem;
 }
 .footer-menu-note{
   position: absolute;
@@ -122,6 +124,7 @@ footer{
   width: 100%;
   background-color: $background-top;
   border-radius: 40px 40px 0 0;
+  padding-bottom: 40px;
     .name{
     justify-content: start;
     margin: 1.5rem 0 0 1rem;

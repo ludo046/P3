@@ -4,8 +4,17 @@
         width: 0%;
     }
     to{
-        width: 10%;
+        width: 9%;
     }
+}
+@keyframes slide-right{
+  from{
+
+      width: 5%;
+  }
+  to{
+      width: 0%;
+  }
 }
 @keyframes slide-left-desktop{
   from{
