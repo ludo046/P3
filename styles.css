@@ -385,7 +385,7 @@
   }
   .heart-button .enable:hover {
     opacity: 1;
-    animation: fadein 0.5 linear 0s 1 backwards;
+    animation: fadein 0.5 linear 0s backwards;
   }
 }
 
