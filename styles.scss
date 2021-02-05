@@ -164,6 +164,26 @@ footer{
 }
 .meal{
   @include meal;
+  &:hover{
+    .check-background{
+    background-color: $tertiary-color;
+    left: 0rem;
+    padding: 1.4em 1.6rem 1.5rem 1.1rem;
+    border-radius: 0 1rem 1rem 0;
+    opacity: 1;
+    animation: slide-left .40s linear 0s forwards;
+    @media screen and (min-width: 1225px){
+      right: 2rem;
+      animation: slide-left-desktop .40s linear 0s 1 forwards;
+    }
+    .fa-check-circle{
+      animation: rotate .50s;
+      color:white;
+      font-size: 1.5rem;
+  } 
+    }
+ 
+  }
     .description{
       margin: 0 1rem 0 0;
       display: flex;
@@ -172,19 +192,17 @@ footer{
       overflow: hidden;
       text-overflow: ellipsis;
       width: 90%;
-      position: relative;
+
     }
     .price{
       display: flex;
       @include price;
-      position: relative;
-      right: 0rem;
-      top: 1.5rem;
+      padding-top: 2rem;
     }  
     .check-background{
       @include check-background;
-      } 
+      }
     .check-background-l{
       @include check-background-l
     }
-}
+  }

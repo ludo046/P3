@@ -81,40 +81,24 @@
     font-size: 1rem;
     width: 20%;
     margin-left: 1rem;
-    margin-right: 1rem;
+    //padding-right: 1rem;
     @media screen and (min-width: 1225px){
         width: 5%;
     }
 }
 @mixin check-background{
         background-color: transparent;
-        padding: 1.5rem 1.8rem 1.8rem 20rem;
+        padding: 1.5rem 0rem 1.8rem 0rem;
         border-radius: 0 1rem 1rem 0;
         opacity: 1;
-        width: 1rem;
-        display: flex;
-        position: absolute;
+        width: 2rem;
+        margin-left: 1rem;
         @media screen and (min-width: 1225px){
-          padding: 1.5rem 83rem 1.8rem 16rem;
+          padding: 1.5rem 0rem 1.8rem;
+          width: 4rem;;
+          margin-left: 0;
       }
-            &:hover{
-              background-color: $tertiary-color;
-              position: relative;
-              left: 0rem;
-              padding: 1.4em 1.6rem 1.5rem 1.1rem;
-              border-radius: 0 1rem 1rem 0;
-              opacity: 1;
-              animation: slide-left .40s linear 0s  backwards;
-              @media screen and (min-width: 1225px){
-                right: 2rem;
-                animation: slide-left-desktop .40s linear 0s 1 backwards;
-              }
-              .fa-check-circle{
-                animation: rotate .50s;
-                color:white;
-                font-size: 1.5rem;
-            }  
-            }
+
 }
 @mixin check-background-l {
     background-color: $tertiary-color;
@@ -125,19 +109,6 @@
     width: 1rem;
     display: flex;
     position: absolute;
-        &:hover{
-          background-color: $tertiary-color;
-          position: relative;
-          left: 0rem;
-          padding: 2em 2rem 2.1rem 1.5rem;
-          border-radius: 0 1rem 1rem 0;
-          opacity: 1;
-          animation: slide-left .50S;
-          .fa-check-circle{
-            animation: rotate .50s .2s;
-            color: white;
-            font-size: 1.5rem;
-        }  
-        }
+
 }
 
